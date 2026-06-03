@@ -26,3 +26,7 @@ def aku():
   
 while True:
   aku()
+
+fungsiKeluar = input("(y/n) ") 
+if fungsiKeluar == "y":
+break
