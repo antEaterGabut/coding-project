@@ -1,5 +1,5 @@
 while True:
-    print("---yo selamat datang---\n===di kalkulator CLI===\n     press enter")
+    print("\n---yo selamat datang---\n===di kalkulator CLI===\n     press enter")
     hint = input(" ")
     if hint == "":
         print("sekedar info, kalo mau lanjut dimana pun\ntinggal pencet enter aja ya")
@@ -21,7 +21,7 @@ while True:
         print("\nkayak yang iya aja -_-.")
     else:
         print("\nyang bener mpruy ;(.")
-        break 
+        continue
 
     delay = input(" ")
     if delay == "":
@@ -86,8 +86,9 @@ while True:
     elif pilihOp == 6:
         print("yaudah, makasih udah mampir.")
         break
-    else:
-        print("\nmake ni orang-_")
+    except ValueError:
+        print("\nmasukan angka yang bener ya.")
+        continue
 
     finishInput = input(" ")
     if finishInput == "":
